@@ -8,75 +8,79 @@
     <title>Document</title>
     <style>
         body {
-            margin: 0px;
-            /* text-align: center; */
-            /* font-size: 24px; */
+            background: url(./img/0101.jpg) repeat;
+            box-sizing: border-box;
             font-family: '標楷體';
-            /* font-weight: bold; */
-            /* font-style: italic; */
-            /* color: #0000FF; */
-            background: url(../17300-104301/0101.jpg) repeat;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
+            /* overflow: hidden; */
         }
 
         header {
             text-align: center;
             font-size: 18px;
-            color: #ff0000;
+            color: #FF0000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        div>span {
+            width: 100%;
+            color: #800000;
         }
 
         p {
+            width: 80%;
             font-size: 16px;
-            color: #ff0000;
-            /* text-align: start; */
-
-        }
-        section{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            font-size: 16px;
-            align-items: center;
-
-        } 
-        section>p{
-            flex-basis: 100%;
-        }
-        section>div{
-            flex-basis: 80%;
-        }
-        section>a{
-            flex-basis: 20%;
         }
 
-</style>
+        a {
+            width: 20%;
+        }
+        #date1{
+            color: #0000FF;
+        }
+        #date2{
+            color: #FF0000;
+        }
+        #date3{
+            color: #00FF00;
+        }
+        #date4{
+            color: #000000;
+        }
+    </style>
 </head>
 
 <body>
     <header>吉他社近期活動公告</header>
     <br>
-    <nav>
+    <nav class="link">
         <a href="./index.html" target="_top">回社團介紹首頁</a>
         <a href="./guitar_history.html">吉他社社史</a>
         <a href="./guitar_learning.html">吉他社教學內容</a>
     </nav>
     <br>
     <nav>
-        <a href="#event1">九月十六日</a>
-        <a href="#event2">十月三十一日</a>
-        <a href="#event3">十二月二十五日</a>
-        <a href="#event4">元月一日</a>
+        <a href="#date1">九月十六日</a>
+        <a href="#date2">十月三十一日</a>
+        <a href="#date3">十二月二十五日</a>
+        <a href="#date4">元月一日</a>
     </nav>
-    <section>
+    <span>
+        近期活動
 
+    </span>
 
-        <p style="color: #800000;">近期活動</p>
-
-        <div id="event1" style="color:#0000FF;">
+    <div class="event">
+        <p id="date1">
             日期：九月十六日<br>
             活動主題：社員大會<br>
             地點：吉他社教室<br>
@@ -86,9 +90,9 @@
             2.指導老師致詞<br>
             3.社長致詞<br>
             4.社規介紹以及教學內容之簡介<br>
-        </div>
-        <a href="#" class="mytop">top</a>
-        <div id="event2" style="color:#FF0000" >
+        </p>
+        <a href="#">top</a>
+        <p id="date2">
             日期：十月三十一日<br>
             活動主題：校內吉他表演<br>
             地點：學校大禮堂<br>
@@ -98,9 +102,9 @@
             2.微風往事<br>
             3.七月涼山<br>
             4.明天會更好(大合唱)<br>
-        </div>
-        <a href="#" class="mytop">top</a>
-        <div id="event3" style="color:#00FF00">
+        </p>
+        <a href="#">top</a>
+        <p id="date3">
             日期：十二月二十五日<br>
             活動主題：校內吉他比賽<br>
             地點：學校大禮堂<br>
@@ -109,9 +113,9 @@
             1.凡我玉山高中之學生<br>
             2.參賽內容可為民歌演唱以及任何純吉他演奏方式如：古典吉他、爵士吉他演奏<br>
             3.參賽者必須自備樂器<br>
-        </div>
-        <a href="#" class="mytop">top</a>
-        <div id="event4" style="color:#000000">
+        </p>
+        <a href="#">top</a>
+        <p id="date4">
             日期：元月一日<br>
             活動主題：全國吉他(高中組)演奏比賽<br>
             地點：台北市社教館<br>
@@ -120,9 +124,10 @@
             1.由學校推舉優秀同學參予<br>
             2.除推舉參加外，其餘有興趣參賽的同學，請自行報名參加<br>
             3.參賽規則請參考比賽細則<br>
-        </div>
-        <a href="#" class="mytop">top</a>
-    </section>
+        </p>
+        <a href="#">top</a>
+
+    </div>
 </body>
 
 </html>
